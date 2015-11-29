@@ -956,6 +956,7 @@ endif
 # $(1): output file
 define build-systemimage-target
   @echo "Target system fs image: $(1)"
+  @cd $(PRODUCT_OUT)/system/ && touch etc/wifi/wpa_overlay.conf && ls -lR | grep '^-' | wc -l > etc/wifi/wpa_overlay.conf
   $(call create-system-vendor-symlink)
   @mkdir -p $(dir $(1)) $(systemimage_intermediates) && rm -rf $(systemimage_intermediates)/system_image_info.txt
   $(call generate-userimage-prop-dictionary, $(systemimage_intermediates)/system_image_info.txt, \

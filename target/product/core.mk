@@ -52,6 +52,20 @@ PRODUCT_PACKAGES += \
     SharedStorageBackup \
     Telecom \
     TeleService \
+    360ShouJiWeishi \
+    2345Browser \
+    2345ZhuShou \
+    BaiDuShuRuFa \
+    GaoDe \
+    IQiyi \
+    KuWoPlayer \
+    MeiTuan \
+    QQ \
+    QQLive \
+    SogoSearch \
+    TencentNews \
+    TouTiao \
+    WeiXin \
     VpnDialogs \
     MmsService
 
